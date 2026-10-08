@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>HARSHITHA DN | Portfolio</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Portfolio of HARSHITHA DN, an aspiring Software Engineer specializing in C, Java, Python, and Data Structures & Algorithms. Open to internship and entry-level engineering roles." />
+  <meta name="keywords" content="HARSHITHA DN, Portfolio, Java, Python, C, Data Structures, Web Development" />
+  <meta name="author" content="HARSHITHA DN" />
+
+  <!-- Google Fonts: Pixel Art Fonts (Press Start 2P, Silkscreen) + Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =================================================================== -->
+  <!-- HEADER & NAVIGATION                                                 -->
+  <!-- =================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="HARSHITHA DN Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">HARSHITHA DN<span class="logo-dot">.dev</span></span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Items: Night Mode Toggle & Resume Button -->
+      <div class="header-actions">
+        <!-- =============================================================== -->
+        <!-- PLACEHOLDER: NIGHT MODE (DARK / LIGHT THEME) TOGGLE             -->
+        <!-- =============================================================== -->
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Night Mode"
+          title="Toggle Night / Light Mode">
+          <span class="theme-icon-wrapper">
+            <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+            <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+          </span>
+          <span class="theme-label sr-only">Toggle Theme</span>
+        </button>
+        <!-- END PLACEHOLDER: NIGHT MODE TOGGLE -->
+
+        <!-- Quick Resume Link -->
+        <a href="resume%20hdn.jpeg" target="_blank" class="btn btn-sm btn-outline-primary header-resume-btn">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Navigation Hamburger Toggle -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-label="Open Navigation Menu"
+          aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================== -->
+  <!-- MAIN CONTENT CONTAINER                                              -->
+  <!-- =================================================================== -->
+  <main id="main-content">
+
+    <!-- ================================================================= -->
+    <!-- SECTION 1: HERO SECTION (RETRO PIXEL ART ARCADE STYLE)            -->
+    <!-- Pixel art layout with background.jpeg, retro HUD, player card,    -->
+    <!-- welcome title, tagline, and media-query responsive night mode     -->
+    <!-- ================================================================= -->
+    <section id="hero" class="hero-section pixel-hero" aria-label="Hero Introduction">
+      <!-- Background Image: background.jpeg with pixel grid & scanline treatment -->
+      <div class="pixel-backdrop-wrapper" aria-hidden="true">
+        <div class="pixel-backdrop-img"></div>
+        <div class="pixel-grid-overlay"></div>
+        <div class="pixel-scanlines"></div>
+      </div>
+
+      <div class="container hero-container pixel-container">
+        <!-- Pixel Arcade HUD Topbar -->
+        <div class="pixel-hud-bar">
+          <div class="hud-item hud-level">
+            <span class="pixel-blink">★</span> 1UP: LEVEL 1 SOFTWARE ENGINEER
+          </div>
+          <div class="hud-item hud-stats">
+            <span class="hud-label">HP</span>
+            <div class="pixel-bar hp-bar">
+              <div class="pixel-bar-fill"></div>
+            </div>
+            <span class="hud-val">100/100</span>
+          </div>
+          <div class="hud-item hud-theme">
+            <!-- Theme toggle using CSS media queries & interactive toggle -->
+            <button id="pixel-theme-toggle" class="pixel-btn pixel-btn-xs pixel-toggle-btn" type="button"
+              aria-label="Toggle Night Mode" title="Toggle 8-Bit Day / Night Mode">
+              <span class="theme-mode-text day-text"><i class="fa-solid fa-sun" aria-hidden="true"></i> DAY MODE</span>
+              <span class="theme-mode-text night-text"><i class="fa-solid fa-moon" aria-hidden="true"></i> NIGHT
+                MODE</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="pixel-hero-grid">
+          <!-- Left Column: Welcome Title, Tagline & Action Buttons -->
+          <div class="hero-content pixel-dialog-box">
+            <div class="pixel-badge">
+              <span class="pixel-indicator"></span>
+              <span>[ PLAYER 1: STATUS ONLINE ]</span>
+            </div>
+
+            <!-- Welcome Title -->
+            <div class="pixel-title-wrapper">
+              <p class="pixel-welcome-banner">★ WELCOME VISITOR ★</p>
+              <h1 class="pixel-hero-title">
+                HI, I'M <span class="pixel-name-highlight">HARSHITHA DN</span>
+              </h1>
+            </div>
+
+            <!-- Brief Tagline with retro typewriter cursor -->
+            <p class="pixel-tagline">
+              <span class="pixel-prompt">&gt;</span> <span class="pixel-typewriter" id="typewriter-text">Software
+                Engineer</span><span class="pixel-cursor">_</span>
+            </p>
+
+            <p class="pixel-bio">
+              Information Science &amp; Engineering undergraduate passionate about writing clean,
+              robust code in <span class="pixel-code-highlight">C</span>,
+              <span class="pixel-code-highlight">Java</span>, and
+              <span class="pixel-code-highlight">Python</span>.
+              Mastering <span class="pixel-code-highlight">Data Structures &amp; Algorithms</span> — Ready to Player 1!
+            </p>
+
+            <!-- Pixel Quest Action Buttons -->
+            <div class="hero-cta-group pixel-btn-group">
+              <a href="#projects" class="pixel-btn pixel-btn-primary">
+                <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                <span>START: PROJECTS</span>
+              </a>
+              <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span>QUEST LOG: CONTACT</span>
+              </a>
+              <a href="resume%20hdn.jpeg" target="_blank" class="pixel-btn pixel-btn-accent">
+                <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+                <span>RESUME</span>
+              </a>
+            </div>
+
+            <!-- Pixel Social HUD -->
+            <div class="pixel-social-hud">
+              <span class="pixel-social-label">CHANNELS:</span>
+              <div class="pixel-social-links">
+                <a href="https://github.com/dnharshitha34-prog" target="_blank" rel="noopener noreferrer"
+                  class="pixel-icon-btn" aria-label="GitHub Profile">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/harshitha-dn-916961397" target="_blank" rel="noopener noreferrer"
+                  class="pixel-icon-btn" aria-label="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:dnharshitha34@gmail.com" class="pixel-icon-btn" aria-label="Send Email">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="tel:+918792592830" aria-label="Call HARSHITHA DN">
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Character Portrait in Pixel Window -->
+          <div class="hero-visual pixel-character-frame">
+            <div class="pixel-window">
+              <div class="pixel-window-header">
+                <div class="pixel-window-title">
+                  <i class="fa-solid fa-terminal" aria-hidden="true"></i> CHARACTER_SHEET.EXE
+                </div>
+                <div class="pixel-window-controls" aria-hidden="true">
+                  <span>_</span>
+                  <span>□</span>
+                  <span>×</span>
+                </div>
+              </div>
+
+              <div class="pixel-avatar-box">
+                <img src="profile%20hdn.jpeg" alt="Portrait photograph of HARSHITHA DN" class="pixel-avatar-img"
+                  loading="eager" />
+                <div class="pixel-avatar-corner corner-tl" aria-hidden="true"></div>
+                <div class="pixel-avatar-corner corner-tr" aria-hidden="true"></div>
+                <div class="pixel-avatar-corner corner-bl" aria-hidden="true"></div>
+                <div class="pixel-avatar-corner corner-br" aria-hidden="true"></div>
+              </div>
+
+              <div class="pixel-char-footer">
+                <div class="char-id">
+                  <span class="char-name">HARSHITHA DN</span>
+                  <span class="char-class">INFO SCIENCE &amp; ENGG</span>
+                </div>
+                <div class="char-location">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i> KARNATAKA, IN
+                </div>
+              </div>
+
+              <!-- Pixel Floating Inventory Badges -->
+              <div class="pixel-float-pill float-top">
+                <i class="fa-brands fa-java text-orange" aria-hidden="true"></i> JAVA
+              </div>
+              <div class="pixel-float-pill float-bottom">
+                <i class="fa-brands fa-python text-yellow" aria-hidden="true"></i> PYTHON
+              </div>
+              <div class="pixel-float-pill float-left">
+                <i class="fa-solid fa-microchip text-cyan" aria-hidden="true"></i> C / DSA
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 1: HERO -->
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 2: ABOUT SECTION (CLEAN MINIMALISTIC DESIGN)              -->
+    <!-- Profile & credentials document (resume hdn.jpeg), short bio,      -->
+    <!-- career highlights, and personal interests.                        -->
+    <!-- ================================================================= -->
+    <section id="about" class="about-section minimal-about" aria-label="About HARSHITHA DN">
+      <div class="container">
+        <!-- Minimal Section Header -->
+        <div class="section-header minimal-section-header">
+          <p class="section-tag">01. Profile &amp; Background</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-minimal-grid">
+          <!-- Visual Column: Profile Image / Resume Credentials Card -->
+          <div class="about-image-column">
+            <div class="minimal-image-card">
+              <div class="image-card-topbar">
+                <span class="doc-badge">
+                  <i class="fa-solid fa-file-shield text-accent" aria-hidden="true"></i>
+                  <span>Official Profile &amp; Resume</span>
+                </span>
+                <span class="doc-status-pill">Active</span>
+              </div>
+
+              <!-- Profile / Resume Image Preview Frame -->
+              <div class="image-preview-frame">
+                <img src="resume%20hdn.jpeg" alt="Profile Document and Resume of HARSHITHA DN"
+                  class="about-profile-doc-img" loading="lazy" />
+                <a href="resume%20hdn.jpeg" target="_blank" class="preview-overlay-btn"
+                  aria-label="Open Full Resume Image">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  <span>View Full Document</span>
+                </a>
+              </div>
+
+              <!-- Caption & Quick Actions -->
+              <div class="image-card-caption">
+                <div class="caption-user">
+                  <strong class="caption-name">HARSHITHA DN</strong>
+                  <span class="caption-sub">B.E. Information Science &amp; Engg.</span>
+                </div>
+                <a href="resume%20hdn.jpeg" download="HARSHITHA_DN_Resume.jpeg"
+                  class="btn btn-sm btn-outline-primary doc-download-btn" title="Download Document">
+                  <i class="fa-solid fa-download" aria-hidden="true"></i>
+                  <span>Download</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Column: Short Bio, Career Highlights & Personal Interests -->
+          <div class="about-story-column">
+            <div class="minimal-lead-box">
+              <h3 class="about-headline">
+                Crafting software with clarity, disciplined logic, and genuine curiosity.
+              </h3>
+
+              <p class="about-bio-text">
+                Hello! I am <strong>HARSHITHA DN</strong>, an aspiring Software Engineer currently pursuing my
+                <strong>Bachelor of Engineering in Information Science &amp; Engineering</strong> at
+                <strong>Adichunchanagiri Institute of Technology</strong>, Chikkamagaluru.
+                I am driven by a passion for decomposing complex algorithmic problems and building reliable, scalable
+                software applications.
+              </p>
+
+              <p class="about-bio-text">
+                My core competencies span <strong>C</strong>, <strong>Java</strong>, and <strong>Python</strong>,
+                with dedicated practice in <strong>Data Structures &amp; Algorithms</strong> and <strong>Operating
+                  Systems</strong>.
+                I bring an analytical mindset, clean coding principles, and an eagerness to learn alongside industry
+                leaders in collaborative environments.
+              </p>
+            </div>
+
+            <!-- Career Highlights Group -->
+            <div class="minimal-highlights-section">
+              <h4 class="minimal-subheading">
+                <i class="fa-solid fa-award text-accent" aria-hidden="true"></i> Career &amp; Academic Highlights
+              </h4>
+              <div class="highlights-card-grid">
+                <div class="highlight-stat-card">
+                  <span class="stat-number">2029</span>
+                  <strong class="stat-label">B.E. ISE Undergrad</strong>
+                  <span class="stat-desc">Adichunchanagiri Inst. of Tech</span>
+                </div>
+                <div class="highlight-stat-card">
+                  <span class="stat-number">73.57%</span>
+                  <strong class="stat-label">PUC Science Stream</strong>
+                  <span class="stat-desc">Siddeshwara PU College</span>
+                </div>
+                <div class="highlight-stat-card">
+                  <span class="stat-number">2+</span>
+                  <strong class="stat-label">Applied Works</strong>
+                  <span class="stat-desc">Renewable IoT &amp; Field Studies</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personal Interests Group -->
+            <div class="minimal-interests-section">
+              <h4 class="minimal-subheading">
+                <i class="fa-solid fa-compass text-accent" aria-hidden="true"></i> Personal Interests &amp; Passions
+              </h4>
+              <div class="interests-tags-cluster">
+                <span class="interest-tag">
+                  <i class="fa-solid fa-microchip" aria-hidden="true"></i> Embedded Systems &amp; Arduino
+                </span>
+                <span class="interest-tag">
+                  <i class="fa-solid fa-code" aria-hidden="true"></i> Algorithmic Problem Solving
+                </span>
+                <span class="interest-tag">
+                  <i class="fa-solid fa-bolt" aria-hidden="true"></i> IoT &amp; Clean Energy Tech
+                </span>
+                <span class="interest-tag">
+                  <i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Design Thinking &amp; UI/UX
+                </span>
+                <span class="interest-tag">
+                  <i class="fa-solid fa-users" aria-hidden="true"></i> Collaborative Engineering
+                </span>
+              </div>
+            </div>
+
+            <!-- Action Buttons Row -->
+            <div class="about-action-row">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                <span>Get in Touch</span>
+              </a>
+              <a href="https://github.com/dnharshitha34-prog" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/harshitha-dn-916961397" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 2: ABOUT -->
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 3: SKILLS SECTION                                         -->
+    <!-- Placeholder comments & structure for technical & soft skillsets   -->
+    <!-- ================================================================= -->
+    <section id="skills" class="skills-section" aria-label="Skills and Technologies">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">02. My Capabilities</p>
+          <h2 class="section-title">Technical &amp; Soft Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Programming Languages -->
+          <article class="skill-category-card">
+            <div class="card-icon-banner">
+              <i class="fa-solid fa-code text-gradient-icon" aria-hidden="true"></i>
+            </div>
+            <h3 class="category-title">Programming Languages</h3>
+            <p class="category-subtitle">Core languages used for problem solving and backend logic.</p>
+
+            <ul class="skill-tags-list">
+              <li class="skill-tag">
+                <i class="fa-solid fa-circle-notch text-cyan" aria-hidden="true"></i>
+                <span class="skill-name">C</span>
+                <span class="skill-badge">Intermediate</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-brands fa-java text-orange" aria-hidden="true"></i>
+                <span class="skill-name">Java</span>
+                <span class="skill-badge">OOP &amp; Core</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-brands fa-python text-yellow" aria-hidden="true"></i>
+                <span class="skill-name">Python</span>
+                <span class="skill-badge">Scripting &amp; Logic</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 2: Core Computer Science -->
+          <article class="skill-category-card">
+            <div class="card-icon-banner">
+              <i class="fa-solid fa-cubes-stacked text-gradient-icon" aria-hidden="true"></i>
+            </div>
+            <h3 class="category-title">Computer Science Core</h3>
+            <p class="category-subtitle">Fundamental computing building blocks and theoretical pillars.</p>
+
+            <ul class="skill-tags-list">
+              <li class="skill-tag">
+                <i class="fa-solid fa-network-wired text-purple" aria-hidden="true"></i>
+                <span class="skill-name">Data Structures</span>
+                <span class="skill-badge">Arrays, Trees, Graphs</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-gears text-purple" aria-hidden="true"></i>
+                <span class="skill-name">Algorithms</span>
+                <span class="skill-badge">Sorting, Searching, Greedy</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-microchip text-purple" aria-hidden="true"></i>
+                <span class="skill-name">Operating Systems</span>
+                <span class="skill-badge">Processes &amp; Memory</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-wand-magic-sparkles text-purple" aria-hidden="true"></i>
+                <span class="skill-name">AI Fundamentals</span>
+                <span class="skill-badge">Core Concepts</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 3: Embedded & Hardware Prototyping -->
+          <article class="skill-category-card">
+            <div class="card-icon-banner">
+              <i class="fa-solid fa-bolt text-gradient-icon" aria-hidden="true"></i>
+            </div>
+            <h3 class="category-title">Embedded &amp; Hardware</h3>
+            <p class="category-subtitle">Interfacing microcontrollers with sensors and circuit design.</p>
+
+            <ul class="skill-tags-list">
+              <li class="skill-tag">
+                <i class="fa-solid fa-memory text-emerald" aria-hidden="true"></i>
+                <span class="skill-name">Arduino Uno</span>
+                <span class="skill-badge">Hardware</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-wave-square text-emerald" aria-hidden="true"></i>
+                <span class="skill-name">Sensors Integration</span>
+                <span class="skill-badge">Analog / Digital</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-lightbulb text-emerald" aria-hidden="true"></i>
+                <span class="skill-name">LED &amp; Buzzer Interfacing</span>
+                <span class="skill-badge">Circuits</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-diagram-project text-emerald" aria-hidden="true"></i>
+                <span class="skill-name">Circuit Design</span>
+                <span class="skill-badge">Prototyping</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 4: Tools & Professional Practices -->
+          <article class="skill-category-card">
+            <div class="card-icon-banner">
+              <i class="fa-solid fa-screwdriver-wrench text-gradient-icon" aria-hidden="true"></i>
+            </div>
+            <h3 class="category-title">Tools &amp; Workflow</h3>
+            <p class="category-subtitle">Developer utilities, version control, and collaboration tools.</p>
+
+            <ul class="skill-tags-list">
+              <li class="skill-tag">
+                <i class="fa-brands fa-git-alt text-red" aria-hidden="true"></i>
+                <span class="skill-name">Git</span>
+                <span class="skill-badge">VCS</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-brands fa-github text-white" aria-hidden="true"></i>
+                <span class="skill-name">GitHub</span>
+                <span class="skill-badge">Collaboration</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-terminal text-blue" aria-hidden="true"></i>
+                <span class="skill-name">Command Line / CLI</span>
+                <span class="skill-badge">Workflow</span>
+              </li>
+              <li class="skill-tag">
+                <i class="fa-solid fa-laptop-code text-blue" aria-hidden="true"></i>
+                <span class="skill-name">VS Code &amp; IDEs</span>
+                <span class="skill-badge">Environment</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 5: Soft Skills & Team Dynamics -->
+          <article class="skill-category-card full-width-card">
+            <div class="card-icon-banner">
+              <i class="fa-solid fa-user-astronaut text-gradient-icon" aria-hidden="true"></i>
+            </div>
+            <h3 class="category-title">Professional &amp; Soft Competencies</h3>
+            <p class="category-subtitle">Essential interpersonal skills that drive team effectiveness.</p>
+
+            <div class="soft-skills-cluster">
+              <div class="soft-pill">
+                <i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>
+                <span>Problem Solving</span>
+              </div>
+              <div class="soft-pill">
+                <i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>
+                <span>Design Thinking</span>
+              </div>
+              <div class="soft-pill">
+                <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                <span>Teamwork &amp; Active Listening</span>
+              </div>
+              <div class="soft-pill">
+                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                <span>Technical Communication</span>
+              </div>
+              <div class="soft-pill">
+                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                <span>Time Management &amp; Adaptability</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 3: SKILLS -->
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 4: TIMELINE (EDUCATION & JOURNEY) SECTION                 -->
+    <!-- Placeholder comments & structure for academic and career path     -->
+    <!-- ================================================================= -->
+    <section id="timeline" class="timeline-section" aria-label="Education and Journey Timeline">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">03. Academic Path</p>
+          <h2 class="section-title">Education &amp; Milestones</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline Track Line -->
+          <div class="timeline-center-line" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1: Bachelor of Engineering (Current) -->
+          <div class="timeline-item timeline-item-left">
+            <div class="timeline-dot" aria-hidden="true">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <article class="timeline-content-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-active">Current / In Progress</span>
+                <time class="timeline-date" datetime="2025/2029">2025 &ndash; Expected 2029</time>
+              </div>
+              <h3 class="timeline-title">Bachelor of Engineering (B.E.)</h3>
+              <h4 class="timeline-subtitle">Information Science &amp; Engineering</h4>
+              <p class="timeline-institution">
+                <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                Adichunchanagiri Institute of Technology, Chikkamagaluru
+              </p>
+              <p class="timeline-description">
+                Immersed in undergraduate curriculum focusing on advanced computing principles,
+                Object-Oriented Programming (Java/Python), Data Structures, Algorithms, Computer Systems,
+                and collaborative software project development.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Data Structures</span>
+                <span class="mini-tag">Java</span>
+                <span class="mini-tag">Python</span>
+                <span class="mini-tag">Operating Systems</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Timeline Item 2: Pre-University Course (PUC) -->
+          <div class="timeline-item timeline-item-right">
+            <div class="timeline-dot" aria-hidden="true">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <article class="timeline-content-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-completed">Completed</span>
+                <time class="timeline-date" datetime="2025">Graduated 2025</time>
+              </div>
+              <h3 class="timeline-title">Pre-University Course (PUC)</h3>
+              <h4 class="timeline-subtitle">Science Stream &bull; Score: <strong>73.57%</strong></h4>
+              <p class="timeline-institution">
+                <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                Siddeshwara PU College, Davangere
+              </p>
+              <p class="timeline-description">
+                Completed higher secondary education with a rigorous focus on Mathematics,
+                Physics, Chemistry, and Logic, building strong quantitative foundation for engineering studies.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Mathematics</span>
+                <span class="mini-tag">Physics</span>
+                <span class="mini-tag">Analytical Logic</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Timeline Item 3: 10th Standard (SSLC) -->
+          <div class="timeline-item timeline-item-left">
+            <div class="timeline-dot" aria-hidden="true">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <article class="timeline-content-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-completed">Completed</span>
+                <time class="timeline-date" datetime="2023">Graduated 2023</time>
+              </div>
+              <h3 class="timeline-title">10th Standard (SSLC)</h3>
+              <h4 class="timeline-subtitle">Secondary School Certificate &bull; Score: <strong>63%</strong></h4>
+              <p class="timeline-institution">
+                <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                Sandeepani National Public School
+              </p>
+              <p class="timeline-description">
+                Built foundational academic strengths in basic sciences, mathematics, and social studies,
+                participating in school science fairs and collaborative activities.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Foundational Sciences</span>
+                <span class="mini-tag">Basic Computing</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 4: TIMELINE -->
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 5: PROJECTS SECTION                                       -->
+    <!-- Placeholder comments & structure for software and hardware work   -->
+    <!-- ================================================================= -->
+    <section id="projects" class="projects-section" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">04. What I've Built</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Foot Step Electricity Generation System -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-type">Hardware &amp; IoT</div>
+              <div class="project-links">
+                <a href="https://github.com/dnharshitha34-prog" target="_blank" rel="noopener noreferrer"
+                  class="icon-btn" aria-label="Project Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Foot Step into Electricity Generation System</h3>
+              <p class="project-description">
+                Studied the working principles of clean energy generation from conventional and renewable sources.
+                Constructed a functional physical model demonstrating how mechanical kinetic energy from footsteps
+                can be harnessed via transducers to produce measurable electrical energy for eco-friendly power.
+              </p>
+
+              <div class="project-key-points">
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Designed working circuit prototype and transducer layout</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Authored comprehensive technical documentation and project report</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Sensors</span>
+                <span class="tech-pill">Circuit Design</span>
+                <span class="tech-pill">Renewable Energy</span>
+                <span class="tech-pill">Prototyping</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Government School Observational Study -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-type">Research &amp; Analytics</div>
+              <div class="project-links">
+                <a href="https://github.com/dnharshitha34-prog" target="_blank" rel="noopener noreferrer"
+                  class="icon-btn" aria-label="Project Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Observational Study of Government School</h3>
+              <p class="project-description">
+                Conducted an in-depth observational field study analyzing infrastructure, pedagogical methods,
+                and technological access in rural and government schooling environments. Evaluated bottlenecks
+                and drafted actionable solutions to enrich student digital literacy.
+              </p>
+
+              <div class="project-key-points">
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Surveyed learning environments and pedagogical workflows</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Compiled analytical report proposing tech-enabled education upgrades</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Data Collection</span>
+                <span class="tech-pill">Field Research</span>
+                <span class="tech-pill">Design Thinking</span>
+                <span class="tech-pill">Technical Reporting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Interactive DSA Visualizer & Algorithm Sandbox -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-type">Software &amp; Algorithms</div>
+              <div class="project-links">
+                <a href="https://github.com/dnharshitha34-prog" target="_blank" rel="noopener noreferrer"
+                  class="icon-btn" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Data Structures &amp; Algorithm Sandbox</h3>
+              <p class="project-description">
+                A clean repository of core algorithmic problem solutions implemented in Java and Python.
+                Features step-by-step implementations of sorting algorithms (QuickSort, MergeSort),
+                binary search trees, stack/queue operations, and dynamic programming patterns.
+              </p>
+
+              <div class="project-key-points">
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Time and space complexity profiling for each data structure</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Clean modular OOP structure with unit test validations</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">DSA</span>
+                <span class="tech-pill">OOP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Modern Portfolio Web Application -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-type">Frontend Engineering</div>
+              <div class="project-links">
+                <a href="https://github.com/dnharshitha34-prog" target="_blank" rel="noopener noreferrer"
+                  class="icon-btn" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#hero" class="icon-btn" aria-label="Live Demo Link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Personal Software Engineer Portfolio</h3>
+              <p class="project-description">
+                Engineered a high-performance, accessible personal portfolio website built with semantic HTML5,
+                modern responsive Vanilla CSS, CSS Custom Properties, and vanilla JavaScript. Includes dark/light mode
+                switching, dynamic smooth scroll, and mobile responsive navigation.
+              </p>
+
+              <div class="project-key-points">
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Zero heavy dependencies; ultra-fast load time &amp; 100% semantic tags</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check text-accent" aria-hidden="true"></i>
+                  <span>Persistent theme toggle with system preference detection</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">Vanilla CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">UI/UX</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 5: PROJECTS -->
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 6: CERTIFICATIONS & ACHIEVEMENTS                          -->
+    <!-- Placeholder comments & structure for awards, courses, badges      -->
+    <!-- ================================================================= -->
+    <section id="certifications" class="certifications-section" aria-label="Certifications and Achievements">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">05. Credentials</p>
+          <h2 class="section-title">Certifications &amp; Learning</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="certifications-grid">
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Object-Oriented Programming with Java</h3>
+              <p class="cert-issuer">Academic &amp; Self-Paced Exploration</p>
+              <p class="cert-detail">Core Java syntax, classes, inheritance, polymorphism, and interfaces.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Git &amp; Distributed Version Control</h3>
+              <p class="cert-issuer">Open Source &amp; GitHub Practices</p>
+              <p class="cert-detail">Branching workflows, commits, pull requests, and merge conflict resolution.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Embedded Microcontroller Prototyping</h3>
+              <p class="cert-issuer">Hands-on Laboratory Workshop</p>
+              <p class="cert-detail">Sensor calibration, circuit layout design, and Arduino microcontroller programming.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 6: CERTIFICATIONS -->
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 7: CONTACT SECTION                                        -->
+    <!-- Placeholder comments & structure for contact form and info        -->
+    <!-- ================================================================= -->
+    <section id="contact" class="contact-section" aria-label="Contact HARSHITHA DN">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">06. Get In Touch</p>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead-text">
+            I am currently open to entry-level software engineering positions, internships, and collaborative projects.
+            Feel free to reach out directly or send me a message!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left Column: Direct Contact Information -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Contact Channels</h3>
+            <p class="contact-panel-desc">
+              Whether you have an internship opportunity, a project to discuss, or just want to connect with a fellow
+              engineer,
+              my inbox is always open.
+            </p>
+
+            <ul class="contact-links-list">
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-title">Email</span>
+                  <a href="mailto:dnharshitha34@gmail.com" class="channel-val">dnharshitha34@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-title">Phone</span>
+                  <a href="tel:+918792592830" class="channel-val">+91 8792592830</a>
+                </div>
+              </li>
+
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-title">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/harshitha-dn-916961397" target="_blank" rel="noopener noreferrer"
+                    class="channel-val">linkedin.com/in/harshitha-dn</a>
+                </div>
+              </li>
+
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-title">GitHub</span>
+                  <a href="https://github.com/dnharshitha34-prog" target="_blank" rel="noopener noreferrer"
+                    class="channel-val">github.com/dnharshitha34-prog</a>
+                </div>
+              </li>
+
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-title">Location</span>
+                  <span class="channel-val">Karnataka, India</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Interactive Message Form Placeholder -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <h3 class="form-title">Send a Message</h3>
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user form-input-icon" aria-hidden="true"></i>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your Full Name"
+                    required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email <span class="required-star">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-envelope form-input-icon" aria-hidden="true"></i>
+                  <input type="email" id="contact-email" name="email" class="form-input"
+                    placeholder="youremail@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-pen-nib form-input-icon" aria-hidden="true"></i>
+                  <input type="text" id="contact-subject" name="subject" class="form-input"
+                    placeholder="e.g. Software Engineer Internship Opportunity" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required-star">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4"
+                  placeholder="Hello HARSHITHA DN, I came across your portfolio and would love to discuss..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 7: CONTACT -->
+
+  </main>
+
+  <!-- =================================================================== -->
+  <!-- FOOTER                                                              -->
+  <!-- Semantic footer with copyright, navigation recap, and back to top  -->
+  <!-- =================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">HARSHITHA DN</span>
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Aspiring Software Engineer &bull; Information Science &amp; Engineering.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#timeline" class="footer-link">Timeline</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+
+        <div class="footer-back-to-top">
+          <a href="#hero" class="back-to-top-btn" aria-label="Back to Top of Page">
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> <strong>HARSHITHA DN</strong>. Built with semantic HTML5 &amp;
+
+
+
+          modern CSS.
+        </p>
+        <p class="footer-credit">
+          Designed for performance, accessibility, and clean engineering.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- Custom JavaScript Logic (Night Mode, Interactions, Dynamic Year) -->
+  <script src="script.js"></script>
+</body>
+
+</html>
